@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Rotate : MonoBehaviour
-{ 
+{
+    public float donmeHizi = 100f;
     void Start()
     {
         
@@ -11,6 +12,6 @@ public class Rotate : MonoBehaviour
 
     void Update()
     {
-        
+        transform.Rotate(0, 0, donmeHizi * Time.deltaTime);
     }
 }
